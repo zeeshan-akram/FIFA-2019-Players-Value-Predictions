@@ -18,3 +18,25 @@
 * [Free agent](https://en.wikipedia.org/wiki/Free_agent).
 * [Fitness tips Neymar](https://en.wikipedia.org/wiki/Free_agent).
 ## Data Cleaning
+Data cleaning is very important part. If we give garbage to model. Model will also give us garbage. I did followings to clean data.
+* Dropped irrelevant features.
+* Imputed missing values.
+* Converted some feature to numerical. They are actually numerical features but present as categorical.
+* Fixed GK (goal keeper) feature name.
+* Fixed players valid contract dates.
+* Fixed body type of player.
+## Exploratory Data Analysis
+Looked for player potential with age, player preferred foot and attack rate, top football players and clubs, palyers produced by different countries, players market value and skills and World best finishers etc. For more analysis check source code.<br>
+**Visuals:**<br>
+![loading error](https://github.com/zeeshan-akram/FIFA-2019-Players-Value-Predictions/blob/master/player-potential-vs-age.png)
+![loading error](https://github.com/zeeshan-akram/FIFA-2019-Players-Value-Predictions/blob/master/rating-vs-work-rate.png)
+![loading error](https://github.com/zeeshan-akram/FIFA-2019-Players-Value-Predictions/blob/master/players-from-country.png)
+![loading error](https://github.com/zeeshan-akram/FIFA-2019-Players-Value-Predictions/blob/master/remaining-contract-vs-wage.png)
+![loading error](https://github.com/zeeshan-akram/FIFA-2019-Players-Value-Predictions/blob/master/top-finishers.png)
+![loading error](https://github.com/zeeshan-akram/FIFA-2019-Players-Value-Predictions/blob/master/top-club-goal-keepers.png)
+![loading error](https://github.com/zeeshan-akram/FIFA-2019-Players-Value-Predictions/blob/master/player-value-wage.png)
+![loading error](https://github.com/zeeshan-akram/FIFA-2019-Players-Value-Predictions/blob/master/wage-vs-overall-rating.png)
+![loading error](https://github.com/zeeshan-akram/FIFA-2019-Players-Value-Predictions/blob/master/player-fitness.png)
+![loading error](https://github.com/zeeshan-akram/FIFA-2019-Players-Value-Predictions/blob/master/contract-duration.png)
+![loading error](https://github.com/zeeshan-akram/FIFA-2019-Players-Value-Predictions/blob/master/club-rating-vs-potential.png)
+![loading error](https://github.com/zeeshan-akram/FIFA-2019-Players-Value-Predictions/blob/master/market-value-vs-skills.png)
