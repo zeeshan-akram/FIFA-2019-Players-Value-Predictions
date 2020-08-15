@@ -62,9 +62,9 @@ Feature is very important modeling. I need to perform this to provide clean data
 First thing I've done is split data to train and test then used different ensemble models with root mean squared error. Selected final model by Comparing models performance using cross validation.<br>
 **K-Fold Cross Validation Result:**<br>
 * GB cross validation RMSE score is : 0.0059
-* RF cross validation RMSE score is : 0.0057
+* RF cross validation RMSE score is : 0.0056
 * LGBM cross validation RMSE score is : 0.0065
 * XGB cross validation RMSE score is : 0.0056
 ##### Final model selected result:
-I choosed XGB model and made predictions on test data with learning rate = 0.05.<br>
-**Test Result:**  
+I choosed XGB model and made predictions on test data with learning rate = 0.5.<br>
+**Test Result:**  0.0049
