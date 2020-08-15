@@ -40,3 +40,21 @@ Looked for player potential with age, player preferred foot and attack rate, top
 ![loading error](https://github.com/zeeshan-akram/FIFA-2019-Players-Value-Predictions/blob/master/contract-duration.png)
 ![loading error](https://github.com/zeeshan-akram/FIFA-2019-Players-Value-Predictions/blob/master/club-rating-vs-potential.png)
 ![loading error](https://github.com/zeeshan-akram/FIFA-2019-Players-Value-Predictions/blob/master/market-value-vs-skills.png)
+## Feature Engineering
+Feature is very important modeling. I need to perform this to provide clean data to model.<br>
+**Following things done in FE:**<br>
+* Dropped irrelevant features.
+* Changed dtypes of date time features.
+* Reduced number of categories each categorical feature by grouping them into classes to prevent from creation of too many features when performing one hot coding.
+* Modified player position feature to player position rating by replacing each player position with his position rating. Dropped all positional ratings because we got all players relevant postions rating. It will reduce multicolinearity and keeps only relevant data.
+* Created new feature 'average position rating'.
+* Players skills moves rating values were in range 1 to 5. These values drived from skills features so I replaced these values with mean of all skills features to get same range of values 0 to 100 and dropped all skills features because they all were multicolinear to each other. 
+* Generate new numerical features day, month, year from date time features.
+* Perform one hot and label Encoding on categorical features.
+* Scale down data with MinMax scaler.
+##### Feature Selection:
+* Removed features with Pearson correlation.
+  * Removed correlated predictors to reduce multicolinearity.
+  * Removed features with very low correlation with target variable.
+* Used Embedded Method (lasso algorithm used) for feature selection.
+* Used wrapper method for selecting features which are only important to model.
