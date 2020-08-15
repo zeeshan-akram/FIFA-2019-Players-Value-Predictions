@@ -1,5 +1,5 @@
 # FIFA 2019 Players Value Predictions: Project Overview
-* I saw fotball players data on kaggle. I thought it would be to create a which make prediction on this. The Model predict player value(RMSE = 0.0056). I also have interest in football sport that's inpired me more.
+* I saw fotball players data on kaggle. I thought it would be to create a which make prediction on this. The Model predict player value(RMSE = 0.0049). I also have interest in football sport that's inpired me more.
 * Get data from Kaggle [FIFA 19 complete player dataset](https://www.kaggle.com/karangadiya/fifa19).
 * Cleaned data.
 * Perform Exploratory Data Analysis to get know about data.
@@ -58,3 +58,13 @@ Feature is very important modeling. I need to perform this to provide clean data
   * Removed features with very low correlation with target variable.
 * Used Embedded Method (lasso algorithm used) for feature selection.
 * Used wrapper method for selecting features which are only important to model.
+## Model Building
+First thing I've done is split data to train and test then used different ensemble models with root mean squared error. Selected final model by Comparing models performance using cross validation.<br>
+**K-Fold Cross Validation Result:**<br>
+* GB cross validation RMSE score is : 0.0059
+* RF cross validation RMSE score is : 0.0057
+* LGBM cross validation RMSE score is : 0.0065
+* XGB cross validation RMSE score is : 0.0056
+##### Final model selected result:
+I choosed XGB model and made predictions on test data with learning rate = 0.05.<br>
+**Test Result:**  
