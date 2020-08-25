@@ -1,0 +1,63 @@
+{% extends 'base.html'%}
+
+{% block head %}
+<title>Home</title>
+{% endblock %}
+
+{% block body %}
+<h1>Home Page</h1>
+<br>
+<div class="card">
+    <div class="container">
+        <h3>Will client cancel booking?</h3>
+    </div>
+
+</div>
+<br>
+<div class="card">
+    <div class="container">
+        <h3>Enter Numerical Data:</h3>
+        <form action="/prediction" method="POST">
+            Overall Rating: <input type="number" min='1' max='100' name='Overall' id='Overall' required
+                placeholder="number of days from booking to arrival">
+            &nbsp
+            Potential Rating: <input type="number" min='0' max='100' name='Potential' id='Potential' required
+                placeholder="Number of cancellations">
+            &nbsp
+            Player Wage: <input type='number' name='Wage' id='Wage' required placeholder="number of change bookings">
+            <br>
+            <br>
+            International Reputation: <input type="number" min='1' max='5' name="International Reputation"
+                id='International Reputation' required placeholder="number of parkings">
+            &nbsp
+            Skill Moves Rating: <input type="number" min='1' max='100' name="Skill Moves" id='Skill Moves' required
+                placeholder="number of requests">
+            &nbsp
+            <br>
+            <br>
+            Release Clause: <input type="number" min='0' name="Release Clause" id='Release Clause' required
+                placeholder="number of requests">
+            &nbsp
+            Contract Expire Year: <input type="number" min='2000' name="Contract Expire Year" id='Contract Expire Year'
+                required placeholder="number of requests">
+            <hr>
+            <h3> Enter Categorical Information: </h3>
+            <hr>
+            Club Class: <select id="Club" name="Club">
+                <option value="Club Class C">Class C</option>
+                <option value="Club Class B">Class B</option>
+                <option value="Other">Other</option>
+            </select>
+            <br>
+            <a href="/clubs">Check clubs list</a>
+            <br>
+            <hr>
+            <h3>Prediction</h3>
+            <hr>
+            <br>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</div>
+
+{% endblock %}
