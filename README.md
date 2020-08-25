@@ -5,6 +5,7 @@
 * Perform Exploratory Data Analysis to get know about data.
 * Perform feature engineering (feature selection with Pearson correlation and wrapper method).
 * Optimized ensemble techniques to get best model.
+* Built client facing API using flask.
 ## Code and Resources Used
 **Python version:** 3.7 <br>
 **Packages:** numpy, pandas, seaborn, matplotlib, missingno, plotly, sklearn, boruta_py, lightgbm, xgboost, pickle <br>
@@ -68,3 +69,5 @@ First thing I've done is split data to train and test then used different ensemb
 ##### Final model selected result:
 I choosed XGB model and made predictions on test data with learning rate = 0.5.<br>
 **Test Result:**  0.0049
+## Productionization
+In this step I built a flask API endpoint. The API endpoint takes list of values of different football player features and return estimated player value.
