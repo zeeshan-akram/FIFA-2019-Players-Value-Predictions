@@ -6,6 +6,7 @@
 * Perform feature engineering (feature selection with Pearson correlation and wrapper method).
 * Optimized ensemble techniques to get best model.
 * Built client facing API using flask.
+* Deployed flask API to Heroku. [Click here](https://player-value-prediction.herokuapp.com/) to check deployed API.
 ## Code and Resources Used
 **Python version:** 3.7 <br>
 **Packages:** numpy, pandas, seaborn, matplotlib, missingno, plotly, sklearn, boruta_py, lightgbm, xgboost, pickle <br>
@@ -70,4 +71,5 @@ First thing I've done is split data to train and test then used different ensemb
 I choosed XGB model and made predictions on test data with learning rate = 0.5.<br>
 **Test Result:**  0.0049
 ## Productionization
-In this step I built a flask API endpoint. The API endpoint takes list of values of different football player features and return estimated player value.
+In this step I built a flask API endpoint. The API endpoint takes list of values of different football player features and return estimated player value. At last deployed model to **Heroku** platform.<br>
+**Heroku:** https://player-value-prediction.herokuapp.com/
