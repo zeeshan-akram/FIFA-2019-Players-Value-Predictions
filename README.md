@@ -1,5 +1,5 @@
 # FIFA 2019 Players Value Predictions: Project Overview
-* I saw fotball players data on kaggle. I thought it would be to create a which make prediction on this. The Model predict player value(RMSE = 0.0049). I also have interest in football sport that's inpired me more.
+* I saw fotball players data on kaggle. I thought it would be to create a which make prediction on this. The Model predict player value(RMSE = 0.0049). I also have interest in football sport which motivates me to do this project.
 * Get data from Kaggle [FIFA 19 complete player dataset](https://www.kaggle.com/karangadiya/fifa19).
 * Cleaned data.
 * Perform Exploratory Data Analysis to get know about data.
